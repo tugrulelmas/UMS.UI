@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+proxy settings in package.json for local development.
+env files for setting api prefix.
+nginx file to serve production build.
+
+docker-compose -f docker-compose.yml build
+docker run -p 3002:80 --name react-app app-prod
+docker run -p 3004:80 --name backend-api ums.api
